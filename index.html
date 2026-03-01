@@ -1,24 +1,35 @@
 <!doctype html>
-<html lang="en">
+<html lang="da">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- TODO: Set the document title to the name of your application -->
-    <title>Lovable App</title>
-    <meta name="description" content="Lovable Generated Project" />
-    <meta name="author" content="Lovable" />
-
-    <!-- TODO: Update og:title to match your application name -->
-    <meta property="og:title" content="Lovable App" />
-    <meta property="og:description" content="Lovable Generated Project" />
+    <title>Falkoner 67 Cykler – Cykelbutik på Frederiksberg</title>
+    <meta name="description" content="Brugte og nye kvalitetscykler på Frederiksberg. Mustang, Raleigh Tourist Deluxe og Van de Falk. Servicerede, dokumenterede og klar til brug. Falkoner Allé 67." />
+    <meta name="author" content="Falkoner 67 Cykler" />
+    <meta property="og:title" content="Falkoner 67 Cykler – Cykelbutik på Frederiksberg" />
+    <meta property="og:description" content="Brugte og nye kvalitetscykler på Frederiksberg. Servicerede, dokumenterede og klar til brug." />
     <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
-
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="@Lovable" />
-    <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Store",
+      "name": "Falkoner 67 Cykler",
+      "description": "Cykelbutik på Frederiksberg med brugte og nye kvalitetscykler",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Falkoner Allé 67",
+        "addressLocality": "Frederiksberg",
+        "postalCode": "2000",
+        "addressCountry": "DK"
+      },
+      "telephone": "+4540207373",
+      "openingHoursSpecification": [
+        { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday"], "opens": "11:00", "closes": "18:00" },
+        { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Saturday","Sunday"], "opens": "11:00", "closes": "16:00" }
+      ]
+    }
+    </script>
   </head>
-
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
