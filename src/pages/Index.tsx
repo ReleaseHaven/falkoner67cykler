@@ -6,7 +6,7 @@ import vandefalkDame from "@/assets/vandefalk-dame.webp";
 import mustangHerre from "@/assets/mustang-herre.webp";
 import mustangDame from "@/assets/mustang-dame.webp";
 import cykelkurv from "@/assets/cykelkurv.webp";
-import cykellås from "@/assets/cykellås.jpg";
+import cykellaas from "@/assets/cykellaas.jpg";
 import brooksSadel from "@/assets/brooks-sadel.jpg";
 import FadeInSection from "@/components/FadeInSection";
 import { Shield, FileText, Lock, CheckCircle, Receipt, Key } from "lucide-react";
@@ -26,7 +26,7 @@ const bikes = [
 
 const accessories = [
   { name: "Kurve", img: cykelkurv, text: "Montering af kurve tilbydes" },
-  { name: "Låse", img: cykellås, text: "Forsikringsgodkendte låse med 2 nøgler. Låsens forsikringsnummer medfølger." },
+  { name: "Låse", img: cykellaas, text: "Forsikringsgodkendte låse med 2 nøgler. Låsens forsikringsnummer medfølger." },
   { name: "Brooks sadler", img: brooksSadel, text: "Stort udvalg af Brooks sadler" },
 ];
 
@@ -67,10 +67,10 @@ const Index = () => {
       </header>
 
       {/* Hero */}
-      <section className="relative h-[70vh] md:h-[80vh] flex items-center justify-center mt-12 md:mt-0">
-        <div className="absolute inset-0">
-          <img src={raleighHerre} alt="Raleigh herrecykel – Kvalitetscykler på Frederiksberg" className="w-full h-full object-cover object-center" />
-          <div className="absolute inset-0 bg-gradient-to-b from-foreground/50 via-foreground/40 to-foreground/70" />
+      <section className="relative h-[55vh] md:h-[70vh] flex items-center justify-center mt-12 md:mt-0 overflow-hidden">
+        <div className="absolute inset-0 bg-[#1B2A4A]">
+          <img src={raleighHerre} alt="Raleigh herrecykel – Kvalitetscykler på Frederiksberg" className="w-full h-full object-cover object-[center_30%]" />
+          <div className="absolute inset-0 bg-gradient-to-b from-foreground/55 via-foreground/45 to-foreground/65" />
         </div>
         <div className="relative z-10 text-center px-6 max-w-3xl">
           <h1 className="text-4xl md:text-6xl text-primary-foreground mb-6 leading-tight">
