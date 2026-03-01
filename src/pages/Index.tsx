@@ -7,7 +7,7 @@ import mustangHerre from "@/assets/mustang-herre.webp";
 import mustangDame from "@/assets/mustang-dame.webp";
 import cykelkurv from "@/assets/cykelkurv.webp";
 import cykellås from "@/assets/cykellås.jpg";
-import brooksSadel from "@/assets/brooks-sadel.webp";
+import brooksSadel from "@/assets/brooks-sadel.jpg";
 import FadeInSection from "@/components/FadeInSection";
 import { Shield, FileText, Lock, CheckCircle, Receipt, Key } from "lucide-react";
 
