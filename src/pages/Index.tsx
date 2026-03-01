@@ -67,10 +67,10 @@ const Index = () => {
       </header>
 
       {/* Hero */}
-      <section className="relative h-[85vh] md:h-[90vh] flex items-center justify-center mt-12 md:mt-0">
+      <section className="relative h-[70vh] md:h-[80vh] flex items-center justify-center mt-12 md:mt-0">
         <div className="absolute inset-0">
-          <img src={raleighHerre} alt="Raleigh herrecykel – Kvalitetscykler på Frederiksberg" className="w-full h-full object-cover" />
-          <div className="absolute inset-0 bg-foreground/60" />
+          <img src={raleighHerre} alt="Raleigh herrecykel – Kvalitetscykler på Frederiksberg" className="w-full h-full object-cover object-center" />
+          <div className="absolute inset-0 bg-gradient-to-b from-foreground/50 via-foreground/40 to-foreground/70" />
         </div>
         <div className="relative z-10 text-center px-6 max-w-3xl">
           <h1 className="text-4xl md:text-6xl text-primary-foreground mb-6 leading-tight">
