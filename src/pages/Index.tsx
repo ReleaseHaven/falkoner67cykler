@@ -1,27 +1,33 @@
 import { Phone, MapPin } from "lucide-react";
-import heroBg from "@/assets/hero-bg.jpg";
-import mustangHerre from "@/assets/mustang-herre.webp";
-import cykelkurv from "@/assets/cykelkurv.webp";
 import raleighHerre from "@/assets/raleigh-herre.jpg";
-import mustangDame from "@/assets/mustang-dame.webp";
+import raleighDame from "@/assets/raleigh-dame.jpg";
 import vandefalkHerre from "@/assets/vandefalk-herre.webp";
 import vandefalkDame from "@/assets/vandefalk-dame.webp";
+import mustangHerre from "@/assets/mustang-herre.webp";
+import mustangDame from "@/assets/mustang-dame.webp";
+import cykelkurv from "@/assets/cykelkurv.webp";
 import cykellås from "@/assets/cykellås.jpg";
-import raleighDame from "@/assets/raleigh-dame.jpg";
+import brooksSadel from "@/assets/brooks-sadel.webp";
 import FadeInSection from "@/components/FadeInSection";
-import { Shield, FileText, Lock, Wrench, Heart, CheckCircle, Receipt, Key } from "lucide-react";
+import { Shield, FileText, Lock, CheckCircle, Receipt, Key } from "lucide-react";
 
 const PHONE = "40 20 73 73";
 const PHONE_LINK = "tel:+4540207373";
 const MAPS_LINK = "https://share.google/6hdT9UOX5UqDpBtFE";
 
 const bikes = [
-  { name: "Mustang Herrecykel", img: mustangHerre, brand: "Mustang" },
-  { name: "Mustang Damecykel", img: mustangDame, brand: "Mustang" },
   { name: "Raleigh Tourist Deluxe Herre", img: raleighHerre, brand: "Raleigh" },
   { name: "Raleigh Tourist Deluxe Dame", img: raleighDame, brand: "Raleigh" },
   { name: "Van de Falk Herrecykel", img: vandefalkHerre, brand: "Van de Falk" },
   { name: "Van de Falk Damecykel", img: vandefalkDame, brand: "Van de Falk" },
+  { name: "Mustang Herrecykel", img: mustangHerre, brand: "Mustang" },
+  { name: "Mustang Damecykel", img: mustangDame, brand: "Mustang" },
+];
+
+const accessories = [
+  { name: "Kurve", img: cykelkurv, text: "Montering af kurve tilbydes" },
+  { name: "Låse", img: cykellås, text: "Forsikringsgodkendte låse med 2 nøgler. Låsens forsikringsnummer medfølger." },
+  { name: "Brooks sadler", img: brooksSadel, text: "Stort udvalg af Brooks sadler" },
 ];
 
 const features = [
@@ -30,8 +36,6 @@ const features = [
   { icon: FileText, text: "Registreret stelnummer" },
   { icon: Lock, text: "Forsikringsgodkendte låse med 2 nøgler" },
   { icon: Key, text: "Låsens forsikringsnummer medfølger" },
-  { icon: Wrench, text: "Montering af kurve" },
-  { icon: Heart, text: "Stort udvalg af Brooks sadler" },
   { icon: CheckCircle, text: "Gennemsigtighed og dokumentation" },
 ];
 
@@ -65,7 +69,7 @@ const Index = () => {
       {/* Hero */}
       <section className="relative h-[85vh] md:h-[90vh] flex items-center justify-center mt-12 md:mt-0">
         <div className="absolute inset-0">
-          <img src={heroBg} alt="Klassisk cykel på Frederiksberg" className="w-full h-full object-cover" />
+          <img src={raleighHerre} alt="Raleigh herrecykel – Kvalitetscykler på Frederiksberg" className="w-full h-full object-cover" />
           <div className="absolute inset-0 bg-foreground/60" />
         </div>
         <div className="relative z-10 text-center px-6 max-w-3xl">
@@ -115,31 +119,41 @@ const Index = () => {
             ))}
           </div>
 
-          {/* Kurv */}
           <FadeInSection>
-            <div className="flex flex-col md:flex-row items-center gap-8 mt-16 mb-12 bg-secondary rounded-lg p-8">
-              <div className="w-full md:w-1/3 aspect-square overflow-hidden rounded">
-                <img src={cykelkurv} alt="Cykelkurv" className="w-full h-full object-contain p-4" />
-              </div>
-              <div className="flex-1">
-                <h3 className="text-2xl mb-3">Tilbehør</h3>
-                <p className="text-muted-foreground text-lg">
-                  Vi tilbyder montering af kurve og et stort udvalg af Brooks sadler.
-                </p>
-              </div>
-            </div>
-          </FadeInSection>
-
-          <FadeInSection>
-            <p className="text-center text-muted-foreground text-lg max-w-2xl mx-auto">
+            <p className="text-center text-foreground text-xl md:text-2xl font-medium max-w-2xl mx-auto mt-12">
               Alle brugte cykler er nyligt servicerede og gennemgået. Alt fungerer som det skal.
             </p>
           </FadeInSection>
         </div>
       </section>
 
-      {/* Hvad vi tilbyder */}
+      {/* Tilbehør */}
       <section className="py-24 md:py-32 px-6 bg-secondary">
+        <div className="max-w-6xl mx-auto">
+          <FadeInSection>
+            <h2 className="text-3xl md:text-4xl text-center mb-16">Tilbehør</h2>
+          </FadeInSection>
+
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-8">
+            {accessories.map((item, i) => (
+              <FadeInSection key={item.name} delay={i * 0.1}>
+                <div className="bg-background rounded-lg overflow-hidden">
+                  <div className="aspect-[3/2] overflow-hidden">
+                    <img src={item.img} alt={item.name} className="w-full h-full object-contain p-4" />
+                  </div>
+                  <div className="p-6">
+                    <h3 className="text-xl font-medium mb-2">{item.name}</h3>
+                    <p className="text-muted-foreground">{item.text}</p>
+                  </div>
+                </div>
+              </FadeInSection>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Hvad vi tilbyder */}
+      <section className="py-24 md:py-32 px-6">
         <div className="max-w-6xl mx-auto">
           <FadeInSection>
             <h2 className="text-3xl md:text-4xl text-center mb-16">Hvad vi tilbyder</h2>
@@ -159,28 +173,15 @@ const Index = () => {
           </div>
 
           <FadeInSection>
-            <div className="flex flex-col md:flex-row items-center gap-10">
-              <div className="w-full md:w-1/3">
-                <div className="aspect-square overflow-hidden rounded bg-background">
-                  <img src={cykellås} alt="Forsikringsgodkendt ABUS cykellås" className="w-full h-full object-contain p-6" />
-                </div>
-              </div>
-              <div className="flex-1">
-                <h3 className="text-2xl mb-3">Forsikringsgodkendte låse</h3>
-                <p className="text-muted-foreground text-lg mb-2">
-                  Alle cykler sælges med forsikringsgodkendt lås, 2 nøgler og forsikringsnummer.
-                </p>
-                <p className="text-muted-foreground">
-                  Gode priser på brugte cykler. Kom forbi og få et godt tilbud.
-                </p>
-              </div>
-            </div>
+            <p className="text-center text-muted-foreground text-lg">
+              Gode priser på brugte cykler. Kom forbi og få et godt tilbud.
+            </p>
           </FadeInSection>
         </div>
       </section>
 
       {/* Lovlige og dokumenterede */}
-      <section className="py-24 md:py-32 px-6">
+      <section className="py-24 md:py-32 px-6 bg-secondary">
         <div className="max-w-3xl mx-auto text-center">
           <FadeInSection>
             <h2 className="text-3xl md:text-4xl mb-6">Lovlige og dokumenterede cykler</h2>
