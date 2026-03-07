@@ -1,6 +1,7 @@
 import { Phone, MapPin } from "lucide-react";
 import HeroSection from "@/components/HeroSection";
 import BikesSection from "@/components/BikesSection";
+import OfferingsSection from "@/components/OfferingsSection";
 import AccessoriesSection from "@/components/AccessoriesSection";
 import ServiceSection from "@/components/ServiceSection";
 import AboutSection from "@/components/AboutSection";
