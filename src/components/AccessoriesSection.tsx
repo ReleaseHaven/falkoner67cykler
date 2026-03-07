@@ -67,7 +67,7 @@ const accessories = [
 ];
 
 const AccessoriesSection = () => (
-  <section className="py-24 md:py-32 px-6">
+  <section className="py-24 md:py-32 px-6 bg-secondary">
     <div className="max-w-6xl mx-auto">
       <FadeInSection>
         <h2 className="text-3xl md:text-4xl text-center mb-16">Tilbehør</h2>
