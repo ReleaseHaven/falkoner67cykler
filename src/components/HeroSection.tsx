@@ -8,36 +8,35 @@ interface HeroSectionProps {
 }
 
 const HeroSection = ({ phoneLink, phone, mapsLink }: HeroSectionProps) => (
-  <section className="relative mt-12 md:mt-0 overflow-hidden">
-    <div className="relative w-full h-[45vh] md:h-[58vh]">
-      <img
-        src={raleighHero}
-        alt="Raleigh Tourist de Luxe – Kvalitetscykler på Frederiksberg"
-        className="w-full h-full object-cover object-center"
-      />
-      <div className="absolute inset-0 bg-gradient-to-b from-foreground/40 via-foreground/25 to-foreground/50" />
-      <div className="absolute bottom-0 left-0 right-0 h-[10%] bg-gradient-to-b from-transparent to-background" />
-
-      {/* Text overlay */}
-      <div className="absolute inset-0 z-10 flex items-center justify-center">
-        <div className="text-center px-6 max-w-3xl">
-          <h1 className="text-4xl md:text-6xl text-primary-foreground mb-6 leading-tight">
-            Kvalitetscykler på Frederiksberg
-          </h1>
-          <p className="text-primary-foreground/80 text-lg md:text-xl mb-10 font-light max-w-xl mx-auto">
-            Brugte og nye cykler – servicerede, dokumenterede og klar til brug.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href={phoneLink} className="bg-primary-foreground text-foreground px-8 py-4 rounded font-medium text-base hover:bg-primary-foreground/90 transition-colors flex items-center justify-center gap-2">
-              <Phone className="w-5 h-5" />
-              Ring {phone}
-            </a>
-            <a href={mapsLink} target="_blank" rel="noopener noreferrer" className="border border-primary-foreground/40 text-primary-foreground px-8 py-4 rounded font-medium text-base hover:bg-primary-foreground/10 transition-colors flex items-center justify-center gap-2">
-              <MapPin className="w-5 h-5" />
-              Find vej
-            </a>
-          </div>
+  <section className="mt-12 md:mt-0 bg-secondary">
+    <div className="max-w-6xl mx-auto px-6 lg:px-16 py-12 md:py-16 flex flex-col md:flex-row items-center gap-8 md:gap-12">
+      {/* Text */}
+      <div className="flex-1 text-center md:text-left">
+        <h1 className="text-4xl md:text-5xl lg:text-6xl text-foreground mb-5 leading-tight">
+          Kvalitetscykler på Frederiksberg
+        </h1>
+        <p className="text-muted-foreground text-lg md:text-xl mb-8 font-light max-w-md mx-auto md:mx-0">
+          Brugte og nye cykler – servicerede, dokumenterede og klar til brug.
+        </p>
+        <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+          <a href={phoneLink} className="bg-primary text-primary-foreground px-8 py-4 rounded font-medium text-base hover:bg-accent transition-colors flex items-center justify-center gap-2">
+            <Phone className="w-5 h-5" />
+            Ring {phoneLink.replace("tel:+45", "").replace(/(\d{2})(\d{2})(\d{2})(\d{2})/, "$1 $2 $3 $4")}
+          </a>
+          <a href={mapsLink} target="_blank" rel="noopener noreferrer" className="border border-border text-foreground px-8 py-4 rounded font-medium text-base hover:bg-muted transition-colors flex items-center justify-center gap-2">
+            <MapPin className="w-5 h-5" />
+            Find vej
+          </a>
         </div>
+      </div>
+
+      {/* Image */}
+      <div className="flex-1 flex items-center justify-center">
+        <img
+          src={raleighHero}
+          alt="Raleigh Tourist de Luxe – Kvalitetscykler på Frederiksberg"
+          className="w-full max-w-lg object-contain"
+        />
       </div>
     </div>
   </section>
