@@ -8,8 +8,8 @@ interface HeroSectionProps {
 }
 
 const HeroSection = ({ phoneLink, phone, mapsLink }: HeroSectionProps) => (
-  <section className="mt-12 md:mt-0 bg-secondary">
-    <div className="max-w-6xl mx-auto px-6 lg:px-16 py-12 md:py-16 flex flex-col md:flex-row items-center gap-8 md:gap-12">
+  <section className="mt-12 md:mt-0 bg-white md:min-h-[55vh] md:max-h-[65vh] flex items-center">
+    <div className="w-full max-w-7xl mx-auto px-6 lg:px-16 py-10 md:py-0 flex flex-col md:flex-row items-center gap-10 md:gap-12">
       {/* Text */}
       <div className="flex-1 text-center md:text-left">
         <h1 className="text-4xl md:text-5xl lg:text-6xl text-foreground mb-5 leading-tight">
@@ -35,7 +35,7 @@ const HeroSection = ({ phoneLink, phone, mapsLink }: HeroSectionProps) => (
         <img
           src={raleighHero}
           alt="Raleigh Tourist de Luxe – Kvalitetscykler på Frederiksberg"
-          className="w-full max-w-lg object-contain"
+          className="w-full max-w-2xl object-contain"
         />
       </div>
     </div>
