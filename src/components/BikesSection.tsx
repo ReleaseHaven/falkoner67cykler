@@ -39,7 +39,7 @@ const BikesSection = () => (
                 <img
                   src={bike.img}
                   alt={bike.name}
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  className={`w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ${bike.name === "Christiania Ladcykel" ? "scale-110" : ""}`}
                 />
               </div>
               <p className="text-foreground font-medium">{bike.name}</p>
