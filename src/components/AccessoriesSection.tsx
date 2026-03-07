@@ -76,12 +76,12 @@ const AccessoriesSection = () => (
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
         {accessories.map((item, i) => (
           <FadeInSection key={item.name} delay={i * 0.05}>
-            <div className="bg-background rounded-lg overflow-hidden h-full flex flex-col">
-              <div className="aspect-square overflow-hidden bg-background flex items-center justify-center">
+            <div className="rounded-lg overflow-hidden h-full flex flex-col bg-secondary">
+              <div className="aspect-square overflow-hidden flex items-center justify-center">
                 <img
                   src={item.img}
                   alt={item.name}
-                  className="w-full h-full object-contain p-6"
+                  className="w-full h-full object-cover"
                 />
               </div>
               <div className="p-5 flex flex-col flex-1">
