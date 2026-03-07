@@ -77,11 +77,11 @@ const AccessoriesSection = () => (
         {accessories.map((item, i) => (
           <FadeInSection key={item.name} delay={i * 0.05}>
             <div className="rounded-lg overflow-hidden h-full flex flex-col bg-secondary">
-              <div className="aspect-square overflow-hidden flex items-center justify-center">
+              <div className="aspect-square overflow-hidden flex items-center justify-center bg-secondary">
                 <img
                   src={item.img}
                   alt={item.name}
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-contain p-2"
                 />
               </div>
               <div className="p-5 flex flex-col flex-1">
