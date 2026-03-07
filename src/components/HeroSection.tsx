@@ -9,14 +9,14 @@ interface HeroSectionProps {
 
 const HeroSection = ({ phoneLink, phone, mapsLink }: HeroSectionProps) => (
   <section className="relative mt-12 md:mt-0 overflow-hidden">
-    <div className="relative w-full h-[55vh] md:h-[72vh] bg-[hsl(220,10%,92%)]">
+    <div className="relative w-full h-[45vh] md:h-[58vh]">
       <img
         src={raleighHero}
         alt="Raleigh Tourist de Luxe – Kvalitetscykler på Frederiksberg"
-        className="w-full h-full object-contain object-center"
+        className="w-full h-full object-cover object-center"
       />
       <div className="absolute inset-0 bg-gradient-to-b from-foreground/40 via-foreground/25 to-foreground/50" />
-      <div className="absolute bottom-0 left-0 right-0 h-[12%] bg-gradient-to-b from-transparent to-background" />
+      <div className="absolute bottom-0 left-0 right-0 h-[10%] bg-gradient-to-b from-transparent to-background" />
 
       {/* Text overlay */}
       <div className="absolute inset-0 z-10 flex items-center justify-center">
