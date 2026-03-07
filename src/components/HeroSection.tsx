@@ -7,8 +7,8 @@ interface HeroSectionProps {
 }
 
 const HeroSection = ({ phoneLink, phone, mapsLink }: HeroSectionProps) => (
-  <section className="mt-12 md:mt-0 bg-white">
-    <div className="max-w-3xl mx-auto px-6 lg:px-16 py-20 md:py-28 text-center">
+  <section className="mt-12 md:mt-0 bg-background">
+    <div className="max-w-3xl mx-auto px-6 lg:px-16 py-14 md:py-20 text-center">
       <h1 className="text-4xl md:text-5xl lg:text-6xl text-foreground mb-5 leading-tight">
         Kvalitetscykler på Frederiksberg
       </h1>
