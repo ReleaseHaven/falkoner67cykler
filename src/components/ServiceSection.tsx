@@ -75,40 +75,6 @@ const ServiceSection = () => (
           </div>
         </FadeInSection>
 
-        {/* Reparationer */}
-        <FadeInSection delay={0.2}>
-          <div className="bg-secondary rounded-lg p-8 h-full">
-            <div className="w-12 h-12 rounded bg-primary flex items-center justify-center mb-6">
-              <Wrench className="w-6 h-6 text-primary-foreground" />
-            </div>
-            <h3 className="text-2xl mb-8">Reparationer</h3>
-
-            <div className="space-y-4">
-              {[
-                { name: "Nye pedaler / støtteben", price: "300 kr", discount: "200 kr hvis købt hos os" },
-                { name: "Reparation af dynamolys", price: "300 kr", discount: "200 kr hvis købt hos os" },
-                { name: "Slange", price: "200 kr pr stk" },
-                { name: "Punkteringsfri dæk og slange", price: "650 kr pr stk · 1000 kr for begge", discount: "500 / 800 kr hvis købt hos os" },
-                { name: "Bremsekabel", price: "300 kr", discount: "200 kr hvis købt hos os" },
-                { name: "Bremseklodser", price: "300 kr", discount: "200 kr hvis købt hos os" },
-                { name: "Gearkabel", price: "300 kr", discount: "200 kr hvis købt hos os" },
-                { name: "Nyt gear", price: "600 kr", discount: "400 kr hvis købt hos os" },
-                { name: "For- eller baghjul", price: "1200 kr", discount: "900 kr hvis købt hos os" },
-                { name: "Krankboks", price: "1000 kr", discount: "750 kr hvis købt hos os" },
-              ].map((item) => (
-                <div key={item.name} className="flex flex-col border-b border-border/50 pb-3 last:border-0">
-                  <div className="flex items-baseline justify-between">
-                    <span className="text-sm font-medium text-foreground">{item.name}</span>
-                    <span className="text-sm text-primary font-semibold whitespace-nowrap ml-4">{item.price}</span>
-                  </div>
-                  {item.discount && (
-                    <span className="text-xs text-primary/70">{item.discount}</span>
-                  )}
-                </div>
-              ))}
-            </div>
-          </div>
-        </FadeInSection>
       </div>
 
       <FadeInSection>

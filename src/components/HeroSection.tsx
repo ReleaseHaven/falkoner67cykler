@@ -16,7 +16,7 @@ const HeroSection = ({ phoneLink, phone, mapsLink }: HeroSectionProps) => (
         className="w-full h-full object-cover object-[center_40%]"
       />
       <div className="absolute inset-0 bg-gradient-to-b from-foreground/50 via-foreground/35 to-foreground/60" />
-      <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-b from-transparent to-background" />
+      <div className="absolute bottom-0 left-0 right-0 h-12 bg-gradient-to-b from-transparent to-background" />
 
       {/* Text overlay */}
       <div className="absolute inset-0 z-10 flex items-center justify-center">

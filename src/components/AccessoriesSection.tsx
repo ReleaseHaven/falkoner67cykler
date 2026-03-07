@@ -83,6 +83,10 @@ const AccessoriesSection = () => (
                   alt={item.name}
                   className="w-full h-full object-contain p-2"
                 />
+                  src={item.img}
+                  alt={item.name}
+                  className="w-full h-full object-contain p-2"
+                />
               </div>
               <div className="p-5 flex flex-col flex-1">
                 <h3 className="text-base font-medium mb-1">{item.name}</h3>
