@@ -1,5 +1,5 @@
 import { Phone, MapPin } from "lucide-react";
-import raleighHerre from "@/assets/raleigh-herre.jpg";
+import raleighHero from "@/assets/raleigh-hero.webp";
 
 interface HeroSectionProps {
   phoneLink: string;
@@ -9,14 +9,14 @@ interface HeroSectionProps {
 
 const HeroSection = ({ phoneLink, phone, mapsLink }: HeroSectionProps) => (
   <section className="relative mt-12 md:mt-0 overflow-hidden">
-    <div className="relative w-full h-[50vh] md:h-[65vh]">
+    <div className="relative w-full h-[55vh] md:h-[72vh]">
       <img
-        src={raleighHerre}
-        alt="Raleigh herrecykel – Kvalitetscykler på Frederiksberg"
-        className="w-full h-full object-cover object-[center_40%]"
+        src={raleighHero}
+        alt="Raleigh Tourist de Luxe – Kvalitetscykler på Frederiksberg"
+        className="w-full h-full object-contain object-center"
       />
-      <div className="absolute inset-0 bg-gradient-to-b from-foreground/50 via-foreground/35 to-foreground/60" />
-      <div className="absolute bottom-0 left-0 right-0 h-12 bg-gradient-to-b from-transparent to-background" />
+      <div className="absolute inset-0 bg-gradient-to-b from-foreground/40 via-foreground/25 to-foreground/50" />
+      <div className="absolute bottom-0 left-0 right-0 h-[12%] bg-gradient-to-b from-transparent to-background" />
 
       {/* Text overlay */}
       <div className="absolute inset-0 z-10 flex items-center justify-center">
