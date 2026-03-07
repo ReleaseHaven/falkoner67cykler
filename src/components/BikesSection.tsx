@@ -8,10 +8,10 @@ import mustangDame from "@/assets/mustang-dame.webp";
 import christianiaCykel from "@/assets/christiania-cykel.jpg";
 
 const bikes = [
-  { name: "Raleigh Tourist Deluxe Herre", img: raleighHerre },
-  { name: "Raleigh Tourist Deluxe Dame", img: raleighDame },
   { name: "Van de Falk Herrecykel", img: vandefalkHerre },
   { name: "Van de Falk Damecykel", img: vandefalkDame },
+  { name: "Raleigh Tourist Deluxe Herre", img: raleighHerre },
+  { name: "Raleigh Tourist Deluxe Dame", img: raleighDame },
   { name: "Mustang Herrecykel", img: mustangHerre },
   { name: "Mustang Damecykel", img: mustangDame },
   {
