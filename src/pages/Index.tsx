@@ -40,6 +40,7 @@ const Index = () => {
 
       <HeroSection phoneLink={PHONE_LINK} phone={PHONE} mapsLink={MAPS_LINK} />
       <BikesSection />
+      <OfferingsSection />
       <AccessoriesSection />
       <ServiceSection />
       <AboutSection />
