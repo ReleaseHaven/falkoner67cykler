@@ -25,9 +25,20 @@ const HeroSection = ({ phoneLink, phone, mapsLink }: HeroSectionProps) => (
           Find vej
         </a>
       </div>
-      <p className="mt-6 text-sm text-muted-foreground">
-        Åbent man–tor 11–18 · lør–søn 11–16 · fredag lukket
-      </p>
+      <div className="mt-8 inline-flex flex-col sm:flex-row gap-0 sm:gap-0 border border-border rounded-lg overflow-hidden mx-auto text-sm">
+        <div className="px-5 py-3 flex flex-col items-center border-b sm:border-b-0 sm:border-r border-border">
+          <span className="text-muted-foreground text-xs uppercase tracking-wide mb-0.5">Man – Tor</span>
+          <span className="text-foreground font-semibold text-base">11 – 18</span>
+        </div>
+        <div className="px-5 py-3 flex flex-col items-center border-b sm:border-b-0 sm:border-r border-border opacity-50">
+          <span className="text-muted-foreground text-xs uppercase tracking-wide mb-0.5">Fredag</span>
+          <span className="text-foreground font-semibold text-base">Lukket</span>
+        </div>
+        <div className="px-5 py-3 flex flex-col items-center">
+          <span className="text-muted-foreground text-xs uppercase tracking-wide mb-0.5">Lør – Søn</span>
+          <span className="text-foreground font-semibold text-base">11 – 16</span>
+        </div>
+      </div>
     </div>
   </section>
 );

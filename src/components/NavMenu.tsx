@@ -3,6 +3,7 @@ import { Menu, X, Phone } from "lucide-react";
 
 const navLinks = [
   { label: "Cykler", href: "#cykler" },
+  { label: "Udlejning", href: "#udlejning" },
   { label: "Tilbehør", href: "#tilbehoer" },
   { label: "Service", href: "#service" },
   { label: "Om os", href: "#om-os" },

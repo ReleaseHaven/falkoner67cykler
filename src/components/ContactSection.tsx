@@ -59,7 +59,7 @@ const ContactSection = ({ phoneLink, phone, mapsLink }: ContactSectionProps) => 
         <FadeInSection delay={0.2}>
           <div className="rounded overflow-hidden h-80 md:h-full min-h-[320px]">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1124.9!2d12.5244!3d55.6806!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa4531d047b83c0e7%3A0xa44ab39e5b2f7c67!2s67%20A%2FS!5e0!3m2!1sda!2sdk!4v1"
+              src="https://maps.google.com/maps?q=Falkoner+All%C3%A9+67,+2000+Frederiksberg,+Danmark&hl=da&z=17&output=embed"
               width="100%"
               height="100%"
               style={{ border: 0 }}

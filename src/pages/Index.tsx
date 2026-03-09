@@ -7,6 +7,7 @@ import ServiceSection from "@/components/ServiceSection";
 import AboutSection from "@/components/AboutSection";
 import ContactSection from "@/components/ContactSection";
 import FaqSection from "@/components/FaqSection";
+import RentalSection from "@/components/RentalSection";
 import NavMenu from "@/components/NavMenu";
 
 const PHONE = "40 20 73 73";
@@ -47,6 +48,7 @@ const Index = () => {
       <HeroSection phoneLink={PHONE_LINK} phone={PHONE} mapsLink={MAPS_LINK} />
       <div id="cykler"><BikesSection /></div>
       <OfferingsSection />
+      <RentalSection />
       <div id="tilbehoer"><AccessoriesSection /></div>
       <div id="service"><ServiceSection /></div>
       <div id="om-os"><AboutSection /></div>
@@ -59,6 +61,7 @@ const Index = () => {
           <span className="font-serif text-foreground text-lg">Falkoner 67 Cykler</span>
           <span>Falkoner Allé 67, 2000 Frederiksberg</span>
           <a href={PHONE_LINK} className="hover:text-foreground transition-colors">{PHONE}</a>
+          <span>CVR 45408825</span>
         </div>
       </footer>
     </div>

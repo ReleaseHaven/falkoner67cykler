@@ -3,10 +3,10 @@ import cykelkurv from "@/assets/cykelkurv.webp";
 import cykellaas from "@/assets/cykellaas.jpg";
 import brooksSadel from "@/assets/brooks-sadel.jpg";
 import magnetlys from "@/assets/magnetlys.jpeg";
-import cykellygter from "@/assets/cykellygter.jpeg";
+import cykellygter from "@/assets/batterilys.jpeg";
 import ringeklokkemedgps from "@/assets/ringeklokkemedgps.webp";
 import pluginringlaas from "@/assets/pluginringlaas.webp";
-import kaedelaasstor from "@/assets/kaedelaasstor.jpg";
+import kaedelaasstor from "@/assets/kaedelaasstor.webp";
 import kaedelaaslille from "@/assets/kaedelaaslille.jpeg";
 import cykelhjelm from "@/assets/cykelhjelm.jpg";
 
@@ -67,7 +67,7 @@ const accessories = [
 ];
 
 const AccessoriesSection = () => (
-  <section className="py-24 md:py-32 px-6 bg-secondary">
+  <section className="py-24 md:py-32 px-6 bg-white">
     <div className="max-w-6xl mx-auto">
       <FadeInSection>
         <h2 className="text-3xl md:text-4xl text-center mb-16">Tilbehør</h2>
@@ -76,13 +76,13 @@ const AccessoriesSection = () => (
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
         {accessories.map((item, i) => (
           <FadeInSection key={item.name} delay={i * 0.05}>
-            <div className="rounded-lg overflow-hidden h-full flex flex-col bg-secondary">
-              <div className="aspect-square overflow-hidden flex items-center justify-center bg-secondary">
+            <div className="h-full flex flex-col bg-white">
+              <div className="aspect-square flex items-center justify-center bg-white">
                 <img
                   src={item.img}
                   alt={item.name}
                   loading="lazy"
-                  className="w-full h-full object-contain p-2"
+                  className="w-full h-full object-contain p-4 mix-blend-multiply"
                 />
               </div>
               <div className="p-5 flex flex-col flex-1">

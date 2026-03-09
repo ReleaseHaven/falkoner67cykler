@@ -1,19 +1,23 @@
 import FadeInSection from "@/components/FadeInSection";
 import raleighHerre from "@/assets/raleigh-herre.jpg";
 import raleighDame from "@/assets/raleigh-dame.jpg";
-import vandefalkHerre from "@/assets/vandefalk-herre.webp";
-import vandefalkDame from "@/assets/vandefalk-dame.webp";
-import mustangHerre from "@/assets/mustang-herre.webp";
-import mustangDame from "@/assets/mustang-dame.webp";
+import vandefalkHerre from "@/assets/vandefalk-herre-ny.jpeg";
+import vandefalkDame from "@/assets/vandefalk-dame-ny.jpeg";
+import mustangHerre from "@/assets/mustang-herre-ny.jpeg";
+import mustangDame from "@/assets/mustang-dame-ny.jpeg";
 import christianiaCykel from "@/assets/christiania-cykel.jpg";
+import batavusHerre from "@/assets/batavus-herre.jpeg";
+import batavusDame from "@/assets/batavus-dame.jpeg";
 
-const bikes = [
+const bikes: { name: string; img: string; description?: string; contain?: boolean }[] = [
   { name: "Van de Falk Herrecykel", img: vandefalkHerre },
   { name: "Van de Falk Damecykel", img: vandefalkDame },
   { name: "Raleigh Tourist Deluxe Herre", img: raleighHerre },
-  { name: "Raleigh Tourist Deluxe Dame", img: raleighDame },
+  { name: "Raleigh Tourist Deluxe Dame", img: raleighDame, contain: true },
   { name: "Mustang Herrecykel", img: mustangHerre },
   { name: "Mustang Damecykel", img: mustangDame },
+  { name: "Batavus Herrecykel", img: batavusHerre },
+  { name: "Batavus Damecykel", img: batavusDame },
   {
     name: "Christiania Ladcykel",
     img: christianiaCykel,
@@ -35,12 +39,12 @@ const BikesSection = () => (
         {bikes.map((bike, i) => (
           <FadeInSection key={bike.name} delay={i * 0.1}>
             <div className="group">
-              <div className="aspect-[3/2] overflow-hidden rounded-lg bg-muted mb-4">
+              <div className={`aspect-[3/2] overflow-hidden rounded-lg mb-4 ${bike.contain ? "bg-white" : "bg-muted"}`}>
                 <img
                   src={bike.img}
                   alt={bike.name}
                   loading="lazy"
-                  className={`w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ${bike.name === "Christiania Ladcykel" ? "scale-110" : ""}`}
+                  className={`w-full h-full group-hover:scale-105 transition-transform duration-500 ${bike.contain ? "object-contain p-2" : "object-cover"} ${bike.name === "Christiania Ladcykel" ? "scale-110" : ""}`}
                 />
               </div>
               <p className="text-foreground font-medium">{bike.name}</p>
