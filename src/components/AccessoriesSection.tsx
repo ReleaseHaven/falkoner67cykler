@@ -81,6 +81,7 @@ const AccessoriesSection = () => (
                 <img
                   src={item.img}
                   alt={item.name}
+                  loading="lazy"
                   className="w-full h-full object-contain p-2"
                 />
               </div>

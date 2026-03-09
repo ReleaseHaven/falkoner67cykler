@@ -25,6 +25,9 @@ const HeroSection = ({ phoneLink, phone, mapsLink }: HeroSectionProps) => (
           Find vej
         </a>
       </div>
+      <p className="mt-6 text-sm text-muted-foreground">
+        Åbent man–tor 11–18 · lør–søn 11–16 · fredag lukket
+      </p>
     </div>
   </section>
 );
