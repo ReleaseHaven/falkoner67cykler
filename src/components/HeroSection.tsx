@@ -1,4 +1,4 @@
-import { Phone, MapPin } from "lucide-react";
+import { Phone, MapPin, ChevronDown } from "lucide-react";
 
 interface HeroSectionProps {
   phoneLink: string;
@@ -8,7 +8,7 @@ interface HeroSectionProps {
 
 const HeroSection = ({ phoneLink, phone, mapsLink }: HeroSectionProps) => (
   <section className="mt-12 md:mt-0 bg-background">
-    <div className="max-w-3xl mx-auto px-6 lg:px-16 py-8 md:py-20 text-center">
+    <div className="max-w-3xl mx-auto px-6 lg:px-16 pt-6 pb-4 md:py-20 text-center">
       <h1 className="text-4xl md:text-5xl lg:text-6xl text-foreground mb-5 leading-tight">
         Kvalitetscykler på Frederiksberg
       </h1>
@@ -38,6 +38,9 @@ const HeroSection = ({ phoneLink, phone, mapsLink }: HeroSectionProps) => (
           <span className="text-muted-foreground text-xs uppercase tracking-wide mb-0.5">Lør – Søn</span>
           <span className="text-foreground font-semibold text-sm sm:text-base">11 – 16</span>
         </div>
+      </div>
+      <div className="mt-6 md:mt-8 flex justify-center">
+        <ChevronDown className="w-5 h-5 text-muted-foreground animate-bounce" />
       </div>
     </div>
   </section>
