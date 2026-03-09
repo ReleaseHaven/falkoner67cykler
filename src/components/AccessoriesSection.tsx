@@ -10,7 +10,7 @@ import kaedelaasstor from "@/assets/kaedelaasstor.webp";
 import kaedelaaslille from "@/assets/kaedelaaslille.jpeg";
 import cykelhjelm from "@/assets/cykelhjelm.jpg";
 
-const accessories: { name: string; img: string; price?: string; text?: string; zoom?: boolean }[] = [
+const accessories = [
   {
     name: "Kurve",
     img: cykelkurv,
@@ -47,7 +47,6 @@ const accessories: { name: string; img: string; price?: string; text?: string; z
     name: "Forsikringsgodkendt plug-in ringlås",
     img: pluginringlaas,
     price: "600 kr",
-    zoom: true,
   },
   {
     name: "Stor kædelås",
@@ -85,7 +84,7 @@ const AccessoriesSection = () => (
                   loading="lazy"
                   width={300}
                   height={300}
-                  className={`w-full h-full object-contain mix-blend-multiply ${item.zoom ? "scale-125" : "p-4"}`}
+                  className="w-full h-full object-contain p-4 mix-blend-multiply"
                 />
               </div>
               <div className="p-3 sm:p-5 flex flex-col flex-1">
