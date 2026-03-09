@@ -25,18 +25,18 @@ const HeroSection = ({ phoneLink, phone, mapsLink }: HeroSectionProps) => (
           Find vej
         </a>
       </div>
-      <div className="mt-8 inline-flex flex-col sm:flex-row gap-0 sm:gap-0 border border-border rounded-lg overflow-hidden mx-auto text-sm">
-        <div className="px-5 py-3 flex flex-col items-center border-b sm:border-b-0 sm:border-r border-border">
+      <div className="mt-8 flex flex-row border border-border rounded-lg overflow-hidden w-full sm:w-auto sm:inline-flex">
+        <div className="flex-1 sm:flex-none px-4 sm:px-5 py-3 flex flex-col items-center border-r border-border">
           <span className="text-muted-foreground text-xs uppercase tracking-wide mb-0.5">Man – Tor</span>
-          <span className="text-foreground font-semibold text-base">11 – 18</span>
+          <span className="text-foreground font-semibold text-sm sm:text-base">11 – 18</span>
         </div>
-        <div className="px-5 py-3 flex flex-col items-center border-b sm:border-b-0 sm:border-r border-border opacity-50">
+        <div className="flex-1 sm:flex-none px-4 sm:px-5 py-3 flex flex-col items-center border-r border-border opacity-50">
           <span className="text-muted-foreground text-xs uppercase tracking-wide mb-0.5">Fredag</span>
-          <span className="text-foreground font-semibold text-base">Lukket</span>
+          <span className="text-foreground font-semibold text-sm sm:text-base">Lukket</span>
         </div>
-        <div className="px-5 py-3 flex flex-col items-center">
+        <div className="flex-1 sm:flex-none px-4 sm:px-5 py-3 flex flex-col items-center">
           <span className="text-muted-foreground text-xs uppercase tracking-wide mb-0.5">Lør – Søn</span>
-          <span className="text-foreground font-semibold text-base">11 – 16</span>
+          <span className="text-foreground font-semibold text-sm sm:text-base">11 – 16</span>
         </div>
       </div>
     </div>

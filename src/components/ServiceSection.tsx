@@ -5,13 +5,13 @@ const ServiceSection = () => (
   <section className="py-24 md:py-32 px-6">
     <div className="max-w-6xl mx-auto">
       <FadeInSection>
-        <h2 className="text-3xl md:text-4xl text-center mb-16">Service & reparationer</h2>
+        <h2 className="text-2xl md:text-3xl lg:text-4xl text-center mb-10 md:mb-16">Service & reparationer</h2>
       </FadeInSection>
 
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-16">
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-5 sm:gap-8 mb-10 md:mb-16">
         {/* Reparationer */}
         <FadeInSection delay={0}>
-          <div className="bg-secondary rounded-lg p-8 h-full">
+          <div className="bg-secondary rounded-lg p-5 sm:p-8 h-full">
             <div className="w-12 h-12 rounded bg-primary flex items-center justify-center mb-6">
               <Wrench className="w-6 h-6 text-primary-foreground" />
             </div>
@@ -46,7 +46,7 @@ const ServiceSection = () => (
 
         {/* Service – almindelig cykel */}
         <FadeInSection delay={0.1}>
-          <div className="bg-secondary rounded-lg p-8 h-full">
+          <div className="bg-secondary rounded-lg p-5 sm:p-8 h-full">
             <div className="w-12 h-12 rounded bg-primary flex items-center justify-center mb-6">
               <Settings className="w-6 h-6 text-primary-foreground" />
             </div>
@@ -84,7 +84,7 @@ const ServiceSection = () => (
 
         {/* Service – Christiania ladcykler */}
         <FadeInSection delay={0.2}>
-          <div className="bg-secondary rounded-lg p-8 h-full">
+          <div className="bg-secondary rounded-lg p-5 sm:p-8 h-full">
             <div className="w-12 h-12 rounded bg-primary flex items-center justify-center mb-6">
               <Bike className="w-6 h-6 text-primary-foreground" />
             </div>

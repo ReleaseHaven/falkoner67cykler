@@ -73,7 +73,7 @@ const AccessoriesSection = () => (
         <h2 className="text-3xl md:text-4xl text-center mb-16">Tilbehør</h2>
       </FadeInSection>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+      <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3 sm:gap-6">
         {accessories.map((item, i) => (
           <FadeInSection key={item.name} delay={i * 0.05}>
             <div className="h-full flex flex-col bg-white">
@@ -85,13 +85,13 @@ const AccessoriesSection = () => (
                   className="w-full h-full object-contain p-4 mix-blend-multiply"
                 />
               </div>
-              <div className="p-5 flex flex-col flex-1">
-                <h3 className="text-base font-medium mb-1">{item.name}</h3>
+              <div className="p-3 sm:p-5 flex flex-col flex-1">
+                <h3 className="text-sm sm:text-base font-medium mb-1">{item.name}</h3>
                 {item.price && (
-                  <p className="text-primary font-semibold text-sm mb-1">{item.price}</p>
+                  <p className="text-primary font-semibold text-xs sm:text-sm mb-1">{item.price}</p>
                 )}
                 {item.text && (
-                  <p className="text-muted-foreground text-sm">{item.text}</p>
+                  <p className="text-muted-foreground text-xs sm:text-sm">{item.text}</p>
                 )}
               </div>
             </div>

@@ -38,7 +38,7 @@ const FaqItem = ({ question, answer }: { question: string; answer: string }) => 
         className="w-full text-left py-5 flex items-center justify-between gap-4 hover:text-primary transition-colors"
         onClick={() => setOpen(!open)}
       >
-        <span className="text-base font-medium">{question}</span>
+        <span className="text-sm sm:text-base font-medium">{question}</span>
         <ChevronDown
           className={`w-5 h-5 flex-shrink-0 text-muted-foreground transition-transform duration-300 ${open ? "rotate-180" : ""}`}
         />
@@ -56,7 +56,7 @@ const FaqSection = () => (
   <section id="faq" className="py-24 md:py-32 px-6">
     <div className="max-w-3xl mx-auto">
       <FadeInSection>
-        <h2 className="text-3xl md:text-4xl text-center mb-16">Ofte stillede spørgsmål</h2>
+        <h2 className="text-2xl md:text-3xl lg:text-4xl text-center mb-10 md:mb-16">Ofte stillede spørgsmål</h2>
       </FadeInSection>
       <FadeInSection>
         <div className="border-t border-border">

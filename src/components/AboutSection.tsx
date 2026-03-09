@@ -4,8 +4,8 @@ const AboutSection = () => (
   <section className="py-24 md:py-32 px-6 bg-secondary">
     <div className="max-w-3xl mx-auto">
       <FadeInSection>
-        <h2 className="text-3xl md:text-4xl text-center mb-10">Om os</h2>
-        <div className="space-y-6 text-foreground text-lg leading-relaxed">
+        <h2 className="text-2xl md:text-3xl lg:text-4xl text-center mb-8 md:mb-10">Om os</h2>
+        <div className="space-y-5 text-foreground text-base md:text-lg leading-relaxed">
           <p>
             Hos Falkoner 67 Cykler arbejder vi med at give gode cykler et nyt liv. En stor del af vores cykler kommer fra officielle politiaktioner, hvor cykler uden ejere bliver indsamlet og senere frigivet til salg. Disse cykler gennemgår vi grundigt i vores værksted, hvor de bliver restaureret, serviceret og gjort klar til brug igen.
           </p>

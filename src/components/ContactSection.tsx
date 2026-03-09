@@ -11,10 +11,10 @@ const ContactSection = ({ phoneLink, phone, mapsLink }: ContactSectionProps) => 
   <section className="py-24 md:py-32 px-6">
     <div className="max-w-5xl mx-auto">
       <FadeInSection>
-        <h2 className="text-3xl md:text-4xl text-center mb-16">Besøg butikken</h2>
+        <h2 className="text-2xl md:text-3xl lg:text-4xl text-center mb-10 md:mb-16">Besøg butikken</h2>
       </FadeInSection>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-12">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 mb-10 md:mb-12">
         <FadeInSection>
           <div>
             <h3 className="text-2xl mb-6">Adresse</h3>
@@ -38,7 +38,7 @@ const ContactSection = ({ phoneLink, phone, mapsLink }: ContactSectionProps) => 
             </div>
 
             <div className="mt-10">
-              <a href={phoneLink} className="text-3xl md:text-4xl font-serif text-primary hover:text-navy-light transition-colors">
+              <a href={phoneLink} className="text-2xl md:text-3xl lg:text-4xl font-serif text-primary hover:text-navy-light transition-colors">
                 {phone}
               </a>
             </div>

@@ -30,13 +30,13 @@ const RentalSection = () => (
   <section id="udlejning" className="py-24 md:py-32 px-6 bg-secondary">
     <div className="max-w-6xl mx-auto">
       <FadeInSection>
-        <h2 className="text-3xl md:text-4xl text-center mb-4">Udlejning</h2>
-        <p className="text-muted-foreground text-center text-lg mb-16 max-w-2xl mx-auto">
+        <h2 className="text-2xl md:text-3xl lg:text-4xl text-center mb-4">Udlejning</h2>
+        <p className="text-muted-foreground text-center text-base md:text-lg mb-12 md:mb-16 max-w-2xl mx-auto">
           Lej en cykel til dagen – vi har cykler til alle behov.
         </p>
       </FadeInSection>
 
-      <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 mb-12">
+      <div className="grid grid-cols-1 sm:grid-cols-3 gap-5 sm:gap-8 mb-10 sm:mb-12">
         {rentals.map((rental, i) => (
           <FadeInSection key={rental.name} delay={i * 0.1}>
             <div className="bg-background rounded-lg overflow-hidden flex flex-col h-full">
@@ -55,11 +55,11 @@ const RentalSection = () => (
                   <span className="text-muted-foreground text-sm">Billede kommer snart</span>
                 </div>
               )}
-              <div className="p-6 flex flex-col flex-1">
-                <h3 className="text-lg font-medium mb-2">{rental.name}</h3>
+              <div className="p-4 sm:p-6 flex flex-col flex-1">
+                <h3 className="text-base sm:text-lg font-medium mb-2">{rental.name}</h3>
                 <p className="text-muted-foreground text-sm mb-4 flex-1">{rental.description}</p>
                 <div className="flex items-baseline gap-1">
-                  <span className="text-2xl font-semibold text-primary">{rental.price}</span>
+                  <span className="text-xl sm:text-2xl font-semibold text-primary">{rental.price}</span>
                   <span className="text-muted-foreground text-sm">{rental.unit}</span>
                 </div>
               </div>

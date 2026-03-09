@@ -38,13 +38,13 @@ const OfferingsSection = () => (
   <section className="py-24 md:py-32 px-6">
     <div className="max-w-6xl mx-auto">
       <FadeInSection>
-        <h2 className="text-3xl md:text-4xl text-center mb-4">Hvad vi tilbyder</h2>
-        <p className="text-muted-foreground text-center text-lg mb-16 max-w-2xl mx-auto">
+        <h2 className="text-2xl md:text-3xl lg:text-4xl text-center mb-4">Hvad vi tilbyder</h2>
+        <p className="text-muted-foreground text-center text-base md:text-lg mb-12 md:mb-16 max-w-2xl mx-auto">
           Hos Falkoner 67 Cykler får du tryghed, dokumentation og kvalitet.
         </p>
       </FadeInSection>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-8">
         {offerings.map((item, i) => (
           <FadeInSection key={item.title} delay={i * 0.08}>
             <div className="flex gap-4">
