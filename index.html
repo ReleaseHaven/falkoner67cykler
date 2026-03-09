@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Falkoner 67 Cykler – Cykelbutik på Frederiksberg</title>
-    <meta name="description" content="Brugte og nye kvalitetscykler på Frederiksberg. Mustang, Raleigh Tourist Deluxe og Van de Falk. Servicerede, dokumenterede og klar til brug. Falkoner Allé 67.">
+    <meta name="description" content="Cykelbutik på Frederiksberg – brugte og nye cykler med garanti og kvittering. Cykelservice, reparation og udlejning. Falkoner Allé 67, 2000 Frederiksberg. Ring 40 20 73 73.">
     <meta name="author" content="Falkoner 67 Cykler" />
     <link rel="canonical" href="https://falkoner67cykler.dk" />
 
@@ -13,28 +13,70 @@
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "BicycleStore",
-      "name": "Falkoner 67 Cykler",
-      "url": "https://falkoner67cykler.dk",
-      "description": "Cykelbutik på Frederiksberg med brugte og nye kvalitetscykler",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "Falkoner Allé 67",
-        "addressLocality": "Frederiksberg",
-        "postalCode": "2000",
-        "addressCountry": "DK"
-      },
-      "telephone": "+4540207373",
-      "openingHoursSpecification": [
-        { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday"], "opens": "11:00", "closes": "18:00" },
-        { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Saturday","Sunday"], "opens": "11:00", "closes": "16:00" }
+      "@graph": [
+        {
+          "@type": "BicycleStore",
+          "@id": "https://falkoner67cykler.dk/#business",
+          "name": "Falkoner 67 Cykler",
+          "url": "https://falkoner67cykler.dk",
+          "description": "Cykelbutik på Frederiksberg med brugte og nye kvalitetscykler. Salg, service, reparation og udlejning af cykler.",
+          "image": "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/1f8cbdba-7a68-424a-b03d-535fe917e77b/id-preview-18302f1d--01a3f0e0-ab11-44ba-90a5-02b61bbc61ff.lovable.app-1772373046537.png",
+          "telephone": "+4540207373",
+          "priceRange": "kr-krr",
+          "currenciesAccepted": "DKK",
+          "paymentAccepted": "Cash, Credit Card",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Falkoner Allé 67",
+            "addressLocality": "Frederiksberg",
+            "postalCode": "2000",
+            "addressCountry": "DK"
+          },
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 55.6808,
+            "longitude": 12.5244
+          },
+          "hasMap": "https://maps.app.goo.gl/zoCXcQiMVECK3tnG6",
+          "sameAs": [
+            "https://maps.app.goo.gl/zoCXcQiMVECK3tnG6"
+          ],
+          "areaServed": [
+            { "@type": "City", "name": "Frederiksberg" },
+            { "@type": "City", "name": "København" }
+          ],
+          "openingHours": ["Mo-Th 11:00-18:00", "Sa-Su 11:00-16:00"],
+          "openingHoursSpecification": [
+            { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday"], "opens": "11:00", "closes": "18:00" },
+            { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Saturday","Sunday"], "opens": "11:00", "closes": "16:00" }
+          ],
+          "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Cykler, tilbehør, service og udlejning",
+            "itemListElement": [
+              { "@type": "Offer", "itemOffered": { "@type": "Product", "name": "Brugte cykler" } },
+              { "@type": "Offer", "itemOffered": { "@type": "Product", "name": "Nye cykler" } },
+              { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Cykelservice og reparation" } },
+              { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Cykeludlejning" } }
+            ]
+          }
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://falkoner67cykler.dk/#website",
+          "url": "https://falkoner67cykler.dk",
+          "name": "Falkoner 67 Cykler",
+          "description": "Cykelbutik på Frederiksberg",
+          "inLanguage": "da",
+          "publisher": { "@id": "https://falkoner67cykler.dk/#business" }
+        }
       ]
     }
     </script>
     <meta property="og:title" content="Falkoner 67 Cykler – Cykelbutik på Frederiksberg">
     <meta name="twitter:title" content="Falkoner 67 Cykler – Cykelbutik på Frederiksberg">
-    <meta property="og:description" content="Brugte og nye kvalitetscykler på Frederiksberg. Mustang, Raleigh Tourist Deluxe og Van de Falk. Servicerede, dokumenterede og klar til brug. Falkoner Allé 67.">
-    <meta name="twitter:description" content="Brugte og nye kvalitetscykler på Frederiksberg. Mustang, Raleigh Tourist Deluxe og Van de Falk. Servicerede, dokumenterede og klar til brug. Falkoner Allé 67.">
+    <meta property="og:description" content="Cykelbutik på Frederiksberg – brugte og nye cykler med garanti og kvittering. Cykelservice, reparation og udlejning. Falkoner Allé 67, 2000 Frederiksberg.">
+    <meta name="twitter:description" content="Cykelbutik på Frederiksberg – brugte og nye cykler med garanti og kvittering. Cykelservice, reparation og udlejning. Falkoner Allé 67, 2000 Frederiksberg.">
     <meta property="og:image" content="https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/1f8cbdba-7a68-424a-b03d-535fe917e77b/id-preview-18302f1d--01a3f0e0-ab11-44ba-90a5-02b61bbc61ff.lovable.app-1772373046537.png">
     <meta name="twitter:image" content="https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/1f8cbdba-7a68-424a-b03d-535fe917e77b/id-preview-18302f1d--01a3f0e0-ab11-44ba-90a5-02b61bbc61ff.lovable.app-1772373046537.png">
     <meta name="twitter:card" content="summary_large_image">
