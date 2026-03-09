@@ -36,14 +36,17 @@ const BikesSection = () => (
       </FadeInSection>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-8 mb-12">
-        {bikes.map((bike, i) => (
+        {bikes.map((bike, i: number) => (
           <FadeInSection key={bike.name} delay={i * 0.1}>
             <div className="group">
               <div className={`aspect-[3/2] overflow-hidden rounded-lg mb-4 ${bike.contain ? "bg-white" : "bg-muted"}`}>
                 <img
                   src={bike.img}
                   alt={bike.name}
-                  loading="lazy"
+                  loading={i === 0 ? "eager" : "lazy"}
+                  fetchPriority={i === 0 ? "high" : "auto"}
+                  width={600}
+                  height={400}
                   className={`w-full h-full group-hover:scale-105 transition-transform duration-500 ${bike.contain ? "object-contain p-2" : "object-cover"} ${bike.name === "Christiania Ladcykel" ? "scale-110" : ""}`}
                 />
               </div>

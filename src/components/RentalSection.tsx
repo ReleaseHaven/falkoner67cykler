@@ -46,6 +46,8 @@ const RentalSection = () => (
                     src={rental.img}
                     alt={rental.name}
                     loading="lazy"
+                    width={600}
+                    height={450}
                     className="w-full h-full object-cover"
                   />
                 </div>

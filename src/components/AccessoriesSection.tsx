@@ -82,6 +82,8 @@ const AccessoriesSection = () => (
                   src={item.img}
                   alt={item.name}
                   loading="lazy"
+                  width={300}
+                  height={300}
                   className="w-full h-full object-contain p-4 mix-blend-multiply"
                 />
               </div>

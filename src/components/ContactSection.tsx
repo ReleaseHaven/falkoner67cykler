@@ -43,6 +43,12 @@ const ContactSection = ({ phoneLink, phone, mapsLink }: ContactSectionProps) => 
               </a>
             </div>
 
+            <div className="mt-4">
+              <a href="mailto:info@bikesaps.dk" className="text-base text-muted-foreground hover:text-foreground transition-colors">
+                info@bikesaps.dk
+              </a>
+            </div>
+
             <div className="mt-8 flex flex-col sm:flex-row gap-4">
               <a href={phoneLink} className="bg-primary text-primary-foreground px-6 py-3 rounded font-medium text-base hover:bg-navy-light transition-colors flex items-center justify-center gap-2">
                 <Phone className="w-5 h-5" />

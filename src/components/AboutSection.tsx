@@ -7,7 +7,7 @@ const AboutSection = () => (
         <h2 className="text-2xl md:text-3xl lg:text-4xl text-center mb-8 md:mb-10">Om os</h2>
         <div className="space-y-5 text-foreground text-base md:text-lg leading-relaxed">
           <p>
-            Hos Falkoner 67 Cykler arbejder vi med at give gode cykler et nyt liv. En stor del af vores cykler kommer fra officielle politiaktioner, hvor cykler uden ejere bliver indsamlet og senere frigivet til salg. Disse cykler gennemgår vi grundigt i vores værksted, hvor de bliver restaureret, serviceret og gjort klar til brug igen.
+            Hos Falkoner 67 Cykler arbejder vi med at give gode cykler et nyt liv. Vores cykelbutik på Falkoner Allé 67 i Frederiksberg er et fast holdepunkt for cyklister i København og omegn. En stor del af vores cykler kommer fra officielle politiaktioner, hvor cykler uden ejere bliver indsamlet og senere frigivet til salg. Disse cykler gennemgår vi grundigt i vores værksted, hvor de bliver restaureret, serviceret og gjort klar til brug igen.
           </p>
           <p>
             Vores mål er at tilbyde solide kvalitetscykler til gode priser, samtidig med at alt foregår helt transparent og lovligt. Alle cykler sælges med kvittering, og vi sørger for at stelnummer og relevant dokumentation følger med. Alle cyklerne bliver gennemgået fra ende til anden, så de kører som de skal, før de kommer ud på gulvet i butikken.

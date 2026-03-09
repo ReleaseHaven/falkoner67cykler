@@ -4,12 +4,12 @@ import FadeInSection from "@/components/FadeInSection";
 
 const faqs = [
   {
-    question: "Hvad er jeres åbningstider?",
-    answer: "Vi har åbent mandag til torsdag 11–18 og lørdag til søndag 11–16. Fredag er vi lukket.",
+    question: "Hvad er åbningstiderne for cykelbutikken?",
+    answer: "Falkoner 67 Cykler er åbent mandag til torsdag 11–18 og lørdag til søndag 11–16. Fredag er cykelbutikken lukket.",
   },
   {
-    question: "Sælger I brugte cykler med dokumentation?",
-    answer: "Ja. Alle cykler sælges med kvittering, og stelnummer samt relevant dokumentation følger med. Det sikrer lovlig handel og gør det nemt at forsikre cyklen.",
+    question: "Sælger I brugte cykler på Frederiksberg?",
+    answer: "Ja. Vores cykelbutik på Falkoner Allé 67 sælger brugte og nye kvalitetscykler. Alle cykler sælges med kvittering, og stelnummer samt relevant dokumentation følger med. Det sikrer lovlig handel og gør det nemt at forsikre cyklen.",
   },
   {
     question: "Hvor kommer de brugte cykler fra?",
@@ -21,11 +21,11 @@ const faqs = [
   },
   {
     question: "Hvilke cykelmærker fører I?",
-    answer: "Vi fører bl.a. Mustang, Raleigh Tourist Deluxe og Van de Falk i både dame- og herreudgaver, samt Christiania ladcykler.",
+    answer: "Vi fører bl.a. Mustang, Raleigh Tourist Deluxe, Van de Falk og Batavus i både dame- og herreudgaver, samt Christiania ladcykler.",
   },
   {
-    question: "Laver I cykelreparationer?",
-    answer: "Ja. Vi tilbyder reparationer som udskiftning af slanger (200 kr), bremsekabel, gearkabel, hjul og meget mere. Priserne er lavere hvis cyklen er købt hos os. Kom forbi butikken og få et uforpligtende tilbud.",
+    question: "Laver I cykelreparationer på Frederiksberg?",
+    answer: "Ja. Vores værksted tilbyder cykelreparationer som udskiftning af slanger (200 kr), bremsekabel, gearkabel, hjul og meget mere. Priserne er lavere hvis cyklen er købt hos os. Kom forbi og få et uforpligtende tilbud.",
   },
 ];
 

@@ -3,14 +3,36 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <title>Falkoner 67 Cykler – Cykelbutik på Frederiksberg</title>
     <meta name="description" content="Cykelbutik på Frederiksberg – brugte og nye cykler med garanti og kvittering. Cykelservice, reparation og udlejning. Falkoner Allé 67, 2000 Frederiksberg. Ring 40 20 73 73.">
     <meta name="author" content="Falkoner 67 Cykler" />
-    <link rel="canonical" href="https://falkoner67cykler.dk" />
+    <link rel="canonical" href="https://falkoner67cykler.dk/" />
 
+    <!-- Preconnect for Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=DM+Serif+Display&display=swap" />
+
+    <!-- Preload first above-fold image -->
+    <link rel="preload" as="image" href="/src/assets/vandefalk-herre-ny.jpeg" fetchpriority="high" />
+
+    <!-- Favicons -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" sizes="any" href="/favicon.ico" />
+
+    <!-- Open Graph / Social -->
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://falkoner67cykler.dk" />
+    <meta property="og:url" content="https://falkoner67cykler.dk/" />
+    <meta property="og:title" content="Falkoner 67 Cykler – Cykelbutik på Frederiksberg">
+    <meta property="og:description" content="Cykelbutik på Frederiksberg – brugte og nye cykler med garanti og kvittering. Cykelservice, reparation og udlejning. Falkoner Allé 67, 2000 Frederiksberg.">
+    <meta property="og:image" content="https://falkoner67cykler.dk/og-image.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Falkoner 67 Cykler – Cykelbutik på Frederiksberg">
+    <meta name="twitter:description" content="Cykelbutik på Frederiksberg – brugte og nye cykler med garanti og kvittering. Cykelservice, reparation og udlejning. Falkoner Allé 67, 2000 Frederiksberg.">
+    <meta name="twitter:image" content="https://falkoner67cykler.dk/og-image.jpg">
+
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -19,11 +41,16 @@
           "@type": "BicycleStore",
           "@id": "https://falkoner67cykler.dk/#business",
           "name": "Falkoner 67 Cykler",
-          "url": "https://falkoner67cykler.dk",
+          "url": "https://falkoner67cykler.dk/",
           "description": "Cykelbutik på Frederiksberg med brugte og nye kvalitetscykler. Salg, service, reparation og udlejning af cykler.",
-          "image": "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/1f8cbdba-7a68-424a-b03d-535fe917e77b/id-preview-18302f1d--01a3f0e0-ab11-44ba-90a5-02b61bbc61ff.lovable.app-1772373046537.png",
+          "image": "https://falkoner67cykler.dk/og-image.jpg",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://falkoner67cykler.dk/logo.png"
+          },
+          "email": "info@bikesaps.dk",
           "telephone": "+4540207373",
-          "priceRange": "kr-krr",
+          "priceRange": "kr kr",
           "currenciesAccepted": "DKK",
           "paymentAccepted": "Cash, Credit Card",
           "address": {
@@ -39,24 +66,23 @@
             "longitude": 12.5244
           },
           "hasMap": "https://maps.app.goo.gl/zoCXcQiMVECK3tnG6",
-          "sameAs": [
-            "https://maps.app.goo.gl/zoCXcQiMVECK3tnG6"
-          ],
+          "sameAs": [],
           "areaServed": [
             { "@type": "City", "name": "Frederiksberg" },
             { "@type": "City", "name": "København" }
           ],
-          "openingHours": ["Mo-Th 11:00-18:00", "Sa-Su 11:00-16:00"],
+          "openingHours": ["Mo Tu We Th 11:00-18:00", "Fr 00:00-00:00", "Sa Su 11:00-16:00"],
           "openingHoursSpecification": [
             { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday"], "opens": "11:00", "closes": "18:00" },
+            { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Friday"], "opens": "00:00", "closes": "00:00" },
             { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Saturday","Sunday"], "opens": "11:00", "closes": "16:00" }
           ],
           "hasOfferCatalog": {
             "@type": "OfferCatalog",
             "name": "Cykler, tilbehør, service og udlejning",
             "itemListElement": [
-              { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Brugte cykler" } },
-              { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Nye cykler" } },
+              { "@type": "Offer", "itemOffered": { "@type": "Product", "name": "Brugte cykler" } },
+              { "@type": "Offer", "itemOffered": { "@type": "Product", "name": "Nye cykler" } },
               { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Cykelservice og reparation" } },
               { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Cykeludlejning" } }
             ]
@@ -65,74 +91,11 @@
         {
           "@type": "WebSite",
           "@id": "https://falkoner67cykler.dk/#website",
-          "url": "https://falkoner67cykler.dk",
+          "url": "https://falkoner67cykler.dk/",
           "name": "Falkoner 67 Cykler",
-          "description": "Cykelbutik på Frederiksberg",
+          "description": "Cykelbutik på Frederiksberg – brugte og nye cykler med garanti og kvittering. Cykelservice, reparation og udlejning.",
           "inLanguage": "da",
           "publisher": { "@id": "https://falkoner67cykler.dk/#business" }
-        }
-      ]
-    }
-    </script>
-    <meta property="og:title" content="Falkoner 67 Cykler – Cykelbutik på Frederiksberg">
-    <meta name="twitter:title" content="Falkoner 67 Cykler – Cykelbutik på Frederiksberg">
-    <meta property="og:description" content="Cykelbutik på Frederiksberg – brugte og nye cykler med garanti og kvittering. Cykelservice, reparation og udlejning. Falkoner Allé 67, 2000 Frederiksberg.">
-    <meta name="twitter:description" content="Cykelbutik på Frederiksberg – brugte og nye cykler med garanti og kvittering. Cykelservice, reparation og udlejning. Falkoner Allé 67, 2000 Frederiksberg.">
-    <meta property="og:image" content="https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/1f8cbdba-7a68-424a-b03d-535fe917e77b/id-preview-18302f1d--01a3f0e0-ab11-44ba-90a5-02b61bbc61ff.lovable.app-1772373046537.png">
-    <meta name="twitter:image" content="https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/1f8cbdba-7a68-424a-b03d-535fe917e77b/id-preview-18302f1d--01a3f0e0-ab11-44ba-90a5-02b61bbc61ff.lovable.app-1772373046537.png">
-    <meta name="twitter:card" content="summary_large_image">
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "Hvad er åbningstiderne for Falkoner 67 Cykler?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Falkoner 67 Cykler er åbent mandag til torsdag 11-18 og lørdag til søndag 11-16. Fredag er butikken lukket."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Sælger I brugte cykler på Frederiksberg?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Ja. Falkoner 67 Cykler på Falkoner Allé 67 i Frederiksberg sælger brugte og nye kvalitetscykler. Mange af de brugte cykler stammer fra officielle politiaktioner og er fuldt servicerede og gennemgåede inden salg."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Får man kvittering og dokumentation ved køb af cykel?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Ja. Alle cykler sælges med kvittering, og stelnummer samt relevant dokumentation følger med. Det sikrer lovlig handel og gør det nemt at forsikre cyklen."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Hvad koster en service på min cykel?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Lille service koster 200 kr og dækker smøring af kæde og efterspænding. Stor service koster 350 kr (200 kr hvis cyklen er købt hos os) og inkluderer gearjustering, bremsejustering, efterspænding af eger og mere. Service på Christiania ladcykler koster 750 kr (500 kr ved køb hos os)."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Hvilke cykelmærker fører I?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Falkoner 67 Cykler fører bl.a. Mustang, Raleigh Tourist Deluxe og Van de Falk i både dame- og herreudgaver, samt Christiania ladcykler."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Laver I cykelreparationer?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Ja. Vi tilbyder reparationer som udskiftning af slanger (200 kr), bremsekabel (300 kr), gearkabel (300 kr), hjul (1200 kr) og meget mere. Priserne er lavere hvis cyklen er købt hos os."
-          }
         }
       ]
     }

@@ -9,6 +9,7 @@ import ContactSection from "@/components/ContactSection";
 import FaqSection from "@/components/FaqSection";
 import RentalSection from "@/components/RentalSection";
 import NavMenu from "@/components/NavMenu";
+import CookieConsent from "@/components/CookieConsent";
 
 const PHONE = "40 20 73 73";
 const PHONE_LINK = "tel:+4540207373";
@@ -61,9 +62,12 @@ const Index = () => {
           <span className="font-serif text-foreground text-lg">Falkoner 67 Cykler</span>
           <span>Falkoner Allé 67, 2000 Frederiksberg</span>
           <a href={PHONE_LINK} className="hover:text-foreground transition-colors">{PHONE}</a>
+          <a href="mailto:info@bikesaps.dk" className="hover:text-foreground transition-colors">info@bikesaps.dk</a>
           <span>CVR 45408825</span>
         </div>
       </footer>
+
+      <CookieConsent />
     </div>
   );
 };
