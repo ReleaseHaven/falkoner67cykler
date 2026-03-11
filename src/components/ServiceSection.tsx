@@ -33,7 +33,7 @@ const ServiceSection = () => (
                 <div key={item.name} className="flex flex-col border-b border-border/50 pb-3 last:border-0">
                   <div className="flex items-baseline justify-between">
                     <span className="text-sm font-medium text-foreground">{item.name}</span>
-                    <span className="text-sm text-primary font-semibold whitespace-nowrap ml-4">{item.price}</span>
+                    <span className="text-sm text-primary font-semibold ml-4 text-right">{item.price}</span>
                   </div>
                   {item.discount && (
                     <span className="text-xs text-primary/70">{item.discount}</span>
