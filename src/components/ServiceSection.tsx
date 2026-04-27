@@ -22,7 +22,7 @@ const ServiceSection = () => (
                 { name: "Nye pedaler", price: "500 kr", discount: "300 kr hvis købt hos os" },
                 { name: "Støtteben", price: "300 kr", discount: "200 kr hvis købt hos os" },
                 { name: "Reparation af dynamolys", price: "400 kr", discount: "250 kr hvis købt hos os" },
-                { name: "Slange", price: "200 kr pr stk (fast pris)" },
+                { name: "Slange", price: "200 kr pr stk" },
                 { name: "Punkteringsfri dæk og slange", price: "900 kr pr stk · 1.400 kr for begge", discount: "750 / 1.000 kr hvis købt hos os" },
                 { name: "Bremsekabel", price: "400 kr", discount: "250 kr hvis købt hos os" },
                 { name: "Bremseklodser", price: "400 kr", discount: "250 kr hvis købt hos os" },
