@@ -19,16 +19,17 @@ const ServiceSection = () => (
 
             <div className="space-y-4">
               {[
-                { name: "Nye pedaler / støtteben", price: "300 kr", discount: "200 kr hvis købt hos os" },
-                { name: "Reparation af dynamolys", price: "300 kr", discount: "200 kr hvis købt hos os" },
-                { name: "Slange", price: "200 kr pr stk" },
-                { name: "Punkteringsfri dæk og slange", price: "650 kr pr stk · 1000 kr for begge", discount: "500 / 800 kr hvis købt hos os" },
-                { name: "Bremsekabel", price: "300 kr", discount: "200 kr hvis købt hos os" },
-                { name: "Bremseklodser", price: "300 kr", discount: "200 kr hvis købt hos os" },
-                { name: "Gearkabel", price: "300 kr", discount: "200 kr hvis købt hos os" },
-                { name: "Nyt gear", price: "600 kr", discount: "400 kr hvis købt hos os" },
-                { name: "For- eller baghjul", price: "1200 kr", discount: "900 kr hvis købt hos os" },
-                { name: "Krankboks", price: "1000 kr", discount: "750 kr hvis købt hos os" },
+                { name: "Nye pedaler", price: "500 kr", discount: "300 kr hvis købt hos os" },
+                { name: "Støtteben", price: "300 kr", discount: "200 kr hvis købt hos os" },
+                { name: "Reparation af dynamolys", price: "400 kr", discount: "250 kr hvis købt hos os" },
+                { name: "Slange", price: "200 kr pr stk (fast pris)" },
+                { name: "Punkteringsfri dæk og slange", price: "900 kr pr stk · 1.400 kr for begge", discount: "750 / 1.000 kr hvis købt hos os" },
+                { name: "Bremsekabel", price: "400 kr", discount: "250 kr hvis købt hos os" },
+                { name: "Bremseklodser", price: "400 kr", discount: "250 kr hvis købt hos os" },
+                { name: "Gearkabel", price: "400 kr", discount: "250 kr hvis købt hos os" },
+                { name: "Nyt gear", price: "750 kr", discount: "550 kr hvis købt hos os" },
+                { name: "For- eller baghjul (brugt)", price: "1.500 kr", discount: "1.000 kr hvis købt hos os" },
+                { name: "Krankboks", price: "1.100 kr", discount: "1.000 kr hvis købt hos os" },
               ].map((item) => (
                 <div key={item.name} className="flex flex-col border-b border-border/50 pb-3 last:border-0">
                   <div className="flex items-baseline justify-between">
